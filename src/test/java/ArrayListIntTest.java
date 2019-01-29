@@ -8,7 +8,6 @@ import java.util.Random;
 import static junit.framework.TestCase.assertEquals;
 
 
-@Category(IntegrationTest.class)
 public class ArrayListIntTest {
 
     @Test
