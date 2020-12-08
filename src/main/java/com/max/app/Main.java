@@ -1,30 +1,21 @@
 package com.max.app;
 
+import java.io.IOException;
+import java.time.LocalDateTime;
+import java.util.Date;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+public final class Main {
 
-import java.lang.invoke.MethodHandles;
+    public static void main(String[] args) throws IOException {
 
+        Date oldDate = new Date();
+        System.out.println(oldDate);
 
-final class Main {
+        LocalDateTime date = LocalDateTime.now();
+        System.out.println(date.getHour());
 
-    private static Logger LOG = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
-
-
-    private Main() throws Exception {
-
-
-        LOG.info("java version: {}", System.getProperty("java.version"));
+        System.out.printf("java version: %s%n", System.getProperty("java.version"));
     }
 
 
-    public static void main(String[] args) {
-        try {
-            new Main();
-        }
-        catch (Exception ex) {
-            LOG.error("Error occurred", ex);
-        }
-    }
 }
