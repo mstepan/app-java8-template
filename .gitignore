@@ -19,8 +19,12 @@
 *.tar.gz
 *.rar
 
+# IntelliJ IDEA files
+.idea/
+
 # Maven files
 dependency-reduced-pom.xml
+target/
 
 # MacOS files
 .DS_Store 
